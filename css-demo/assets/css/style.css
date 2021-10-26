@@ -5,6 +5,11 @@ body{
 
 header.primary{
     background:green;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    
+    
+    
+    
     text-align:center;
     color:#ffffff;
     text-shadow:2px 2px #000000;
@@ -80,7 +85,7 @@ html {
 
 
 .container{
-    width:70vw
+    width:70vw;
     margin:40px auto;
     max-width:960px;
 }
@@ -170,8 +175,6 @@ blockquote cite{
     padding-top:1.5rem;
 }
 
-
-
 @media screen and (max width:585px){
     
     heafer.primary nav ul{
@@ -196,14 +199,68 @@ blockquote cite{
 
 #content{
     display:flex;
-    flex-direction:column
+    flex-direction:row;
     justify-content:space-between;
 }
 #additional-elements a:link, #additional-elements a:visited{
     color:purple;
 }
 
+#content article.post{
+    width:30%;
+    box-shadow:0 4px 8px rgba(0,0,0,.4);
+    padding:.7rem;
+    font-size:.7rem;
+    border-radius:10px 20px;
+}
 
+#content article.post:hover{
+    box-shadow:0 8px 16px rgba(0,0,0,.4);
+}
+
+article.post figure{
+    margin:0;
+}
+article.post time, article.post figcaption, article.post .post-meta{
+    font-size:.8em;
+    text-transform:uppercase;
+    color:#c0c0c0;
+}
+
+aside[role="complementary"]{
+    background-color:green;
+    color:purple;
+    padding:2.2rem;
+}
+
+aside .container{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+aside article.widget{
+    width:45%;
+}
+aside a:link {
+    color:orange;
+    display:inline-block;
+}
+aside article.widget footer{
+    display:none;
+}
+#colophon {
+    background-color:green;
+}
+#colophon h6{
+    padding:20px;
+    margin:0;
+    text-align:center;
+    color:purple;
+    font-size:.7rem;
+    text-transform:uppercase;
+    text-shadow:1px 1px #000
+}
 /* ---------------Responsive Images----------------- */
 img{
     max-width:100%;
